@@ -1,0 +1,154 @@
+.doctor-finder {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.doctor-finder h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  flex: 2;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.specialty-filter {
+  flex: 1;
+}
+
+.specialty-filter select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.doctors-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.doctor-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.doctor-image {
+  font-size: 3rem;
+  background: #f5f7fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.doctor-info {
+  flex: 1;
+}
+
+.doctor-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.specialty {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-details {
+  display: flex;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.availability {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.availability.available {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.availability.unavailable {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.book-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #45a049;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .doctor-finder {
+    padding: 1rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-details {
+    justify-content: center;
+  }
+} 
