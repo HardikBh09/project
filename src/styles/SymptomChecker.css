@@ -1,0 +1,112 @@
+.symptom-checker {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.symptom-checker h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.symptom-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.results-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.results-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.conditions-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.condition-card {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.condition-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.probability {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.recommendations h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.recommendations ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.recommendations li {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .symptom-checker {
+    padding: 1rem;
+  }
+
+  .symptom-form,
+  .results-section {
+    padding: 1.5rem;
+  }
+} 
